@@ -26,3 +26,24 @@ in the image.
 
 * Set the default command for the container to
 python app.py.
+
+See more in: [Dockerfile](Dockerfile)
+
+## Compose file
+
+This Compose file defines two services, web and redis.
+
+### Web service
+
+* Uses an image that’s built from the Dockerfile
+in the current directory.
+
+* Forwards the exposed port 5000 on the container to
+port 5000 on the host machine. We use the default port
+for the Flask web server, 5000.
+
+### Redis service
+
+It uses a public Redis image pulled from the Docker Hub registry.
+
+See in: [docker-compose.yml](docker-compose.yml)
