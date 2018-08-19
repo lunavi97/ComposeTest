@@ -47,3 +47,27 @@ for the Flask web server, 5000.
 It uses a public Redis image pulled from the Docker Hub registry.
 
 See in: [docker-compose.yml](docker-compose.yml)
+
+## Build and run the app
+
+1. Run **docker-compose up**
+
+2. Enter http://0.0.0.0:5000/ in a browser to see
+the application running.
+
+If you’re using Docker natively on Linux, Docker
+for Mac, or Docker for Windows, then the web app
+should now be listening on port 5000 on your Docker
+daemon host. Point your web browser to
+http://localhost:5000 to find the Hello World message.
+If this doesn’t resolve, you can also try
+http://0.0.0.0:5000.
+
+If you’re using Docker Machine on a Mac or Windows,
+use docker-machine ip MACHINE_VM to get the IP address
+of your Docker host. Then, open
+http://MACHINE_VM_IP:5000 in a browser.
+
+You should see a message in your browser saying:
+
+> Hello World! I have been seen 1 times.
